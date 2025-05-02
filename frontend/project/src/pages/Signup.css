@@ -1,0 +1,87 @@
+/* Signup.css */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Orbitron:wght@500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #393654; /* Same as Login page */
+}
+.navbar-logo {
+  font-family: 'Pacifico', cursive; /* Gives a stylish handwritten look */
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5BC0EB; /* Electric Blue */
+  text-shadow: 2px 2px 8px rgba(91, 192, 235, 0.5);
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar-logo:hover {
+  color: #FF6B6B; /* Coral Red on hover */
+  text-shadow: 2px 2px 12px rgba(255, 107, 107, 0.7);
+}
+
+.signup-container {
+  display:grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #3F3D56; /* Matching background from login page */
+}
+
+.signup-form {
+  background-color: #9AEBA3; /* Light green like login */
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 360px; /* Adjusted for balanced look */
+  text-align: center;
+}
+
+.signup-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.signup-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #393654; /* Dark blue button */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-form button:hover {
+  background-color: #2f2b43;
+}
+
+.signup-form p {
+  margin-top: 16px;
+  color: #222;
+}
+
+.signup-form a {
+  color: #ff6b6b;
+  text-decoration: none;
+  font-weight: bold;
+}

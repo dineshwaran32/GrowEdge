@@ -1,0 +1,30 @@
+.navbar-container {
+  background-color: transparent; /* Deep Indigo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #5BC0EB; /* Electric Blue */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #F8F9FA; /* Ghost White */
+  font-weight: 500;
+}
+
+.navbar-links li a.active {
+  color: #9AEBA3; /* Fresh Mint */
+  border-bottom: 2px solid #9AEBA3;
+}

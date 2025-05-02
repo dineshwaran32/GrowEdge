@@ -1,0 +1,99 @@
+/* Login.css */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Orbitron:wght@500&display=swap');
+.login-auth-container {
+  background-color: #3F3D56;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-logo {
+  font-family: 'Pacifico'; 
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5BC0EB; /* Electric Blue */
+  text-shadow: 2px 2px 8px rgba(91, 192, 235, 0.5);
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar-logo:hover {
+  color: #FF6B6B; /* Coral Red on hover */
+  text-shadow: 2px 2px 12px rgba(255, 107, 107, 0.7);
+}.navbar-logo {
+  font-family: 'Pacifico', cursive; /* Gives a stylish handwritten look */
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5BC0EB; /* Electric Blue */
+  text-shadow: 2px 2px 8px rgba(91, 192, 235, 0.5);
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar-logo:hover {
+  color: #FF6B6B; /* Coral Red on hover */
+  text-shadow: 2px 2px 12px rgba(255, 107, 107, 0.7);
+}
+
+.login-form {
+  background-color: #9AEBA3;
+  padding: 2rem 3rem;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  width: 300px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #3F3D56;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #5BC0EB;
+}
+
+.login-title {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.login-footer {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #2E2E2E;
+}
+
+.login-footer a {
+  color: #FF6B6B;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}

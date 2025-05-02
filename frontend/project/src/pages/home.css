@@ -1,0 +1,106 @@
+/* Home.css */
+
+.home-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 5%;
+  background-color: #393654; /* Matching dark background */
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.home-left {
+  max-width: 50%;
+  min-width: 300px;
+}
+
+.home-title {
+  font-size: 3rem;
+  color: #A393EB; /* Soft Purple */
+  margin-bottom: 1rem;
+}
+
+.home-title span {
+  color: #5BC0EB; /* Electric Blue */
+}
+
+.home-desc {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+}
+
+/* Card buttons as grid */
+.home-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card-button {
+  background-color: #A393EB;
+  color: white;
+  border-radius: 16px;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card-button:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.3);
+  background-color: #8c7dd8;
+}
+
+.tip-box {
+  background-color: #A393EB;
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  max-width: 90%;
+}
+
+.home-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.home-right img {
+  width: 500px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.home-right img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+  .home-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-left {
+    max-width: 100%;
+  }
+
+  .home-right {
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,108 @@
+.task-wrapper {
+    background-color: #393654;
+    min-height: 100vh;
+    padding: 3rem 5%;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .task-title {
+    font-size: 2.8rem;
+    color: #5BC0EB;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px #2E2E2E;
+  }
+  
+  .task-input-area {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+  }
+  
+  .task-input-area input {
+    padding: 0.8rem 1rem;
+    border-radius: 12px;
+    border: 2px solid #A393EB;
+    width: 320px;
+    font-size: 1rem;
+    background-color: #2E2E2E;
+    color: #F8F9FA;
+  }
+  
+  .task-input-area input::placeholder {
+    color: #ccc;
+  }
+  
+  .task-input-area button {
+    background-color: #9AEBA3;
+    color: #2E2E2E;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 0 8px rgba(154, 235, 163, 0.4);
+  }
+  
+  .task-input-area button:hover {
+    background-color: #7ddf91;
+  }
+  
+  .task-list {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .no-tasks {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ddd;
+    font-style: italic;
+  }
+  
+  .task-item {
+    background-color: #5BC0EB;
+    color: #2E2E2E;
+    margin-bottom: 1rem;
+    padding: 1rem 1.2rem;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .task-item.completed span {
+    text-decoration: line-through;
+    color: #d3d3d3;
+  }
+  
+  .task-actions button {
+    margin-left: 0.5rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.2s ease;
+  }
+  
+  .task-actions button:first-child {
+    background-color: #A393EB; /* Complete */
+  }
+  
+  .task-actions button:last-child {
+    background-color: #FF6B6B; /* Delete */
+  }
+  
+  .task-actions button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+  

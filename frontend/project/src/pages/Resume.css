@@ -1,0 +1,165 @@
+/* Container Styling */
+.resume-scanner-container {
+  padding: 3rem 5%;
+  background-color: #393654; /* Deep Indigo background */
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+  color: white;
+}
+
+/* Upload Section */
+.upload-section {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* File Input */
+.upload-button {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #5BC0EB;
+  color: #2E2E2E;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #3aa8d8;
+}
+
+/* Generate Button */
+.generate-btn {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #A393EB;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.generate-btn:hover {
+  background-color: #8a7ddb;
+}
+
+/* Questions Display Box */
+.questions-box {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #2E2E2E; /* Charcoal for contrast */
+  border: 2px solid #5BC0EB;
+  border-radius: 14px;
+  padding: 2rem;
+  min-height: 300px;
+  color: #F8F9FA; /* Ghost White for readability */
+  font-size: 1.1rem;
+}
+
+/* Placeholder Text */
+.placeholder-text {
+  text-align: center;
+  color: #9AEBA3; /* Fresh Mint accent */
+}
+
+/* Each Question */
+.question-item {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+/* Interview Session */
+.interview-session {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #393654; /* Deep Indigo */
+  padding: 2rem;
+  border-radius: 12px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Topic and Difficulty Info */
+.interview-session h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #5BC0EB;
+}
+
+/* Answer Text Area */
+.answer-text {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #2E2E2E;
+  color: #F8F9FA;
+  border-radius: 10px;
+  font-size: 1rem;
+  border: 2px solid #5BC0EB;
+  min-height: 100px;
+}
+
+/* Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Voice Input Button */
+.voice-input-btn {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #A393EB;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.voice-input-btn:hover {
+  background-color: #8a7ddb;
+}
+
+/* Next Question Button */
+.next-question-btn {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #FF6B6B;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.next-question-btn:hover {
+  background-color: #d85a5a;
+}
+
+/* Previous Question Button */
+.previous-question-btn {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #FF6B6B;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.previous-question-btn:hover {
+  background-color: #d85a5a;
+}
