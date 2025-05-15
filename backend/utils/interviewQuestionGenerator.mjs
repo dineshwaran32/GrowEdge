@@ -35,13 +35,13 @@ Requirements:
   try {
     console.log('🔄 Sending request to DeepSeek API...');
     
-    const response = await axios.post('https://openrouter.ai/api/v1/chat/completions', {
-      model: 'deepseek/deepseek-chat-v3-0324:free',
-      messages: [{ role: 'user', content: prompt }],
-      temperature: 0.7,
-      max_tokens: 2000,
-      top_p: 0.9,
-      frequency_penalty: 0.5
+     const response = await axios.post('https://openrouter.ai/api/v1/chat/completions', {
+          model: 'deepseek/deepseek-chat-v3-0324:free',
+          messages: [{ role: 'user', content: prompt }],
+          temperature: 0.7,
+          max_tokens: 2000,
+          top_p: 0.9,
+          frequency_penalty: 0.5
     }, {
       headers: {
         'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`,

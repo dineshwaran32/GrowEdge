@@ -29,12 +29,15 @@ Q5. Write your fifth question here`;
           content: prompt
         }
       ],
-      temperature: 0.7, // Add some creativity but keep it focused
-      max_tokens: 1000  // Ensure we get complete responses
+      temperature: 0.7,
+      max_tokens: 1000
     }, {
       headers: {
         'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`,
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'HTTP-Referer': 'http://localhost:5000', // Required by OpenRouter
+        'X-Title': 'GrowEdge Interview Questions', // Identifies your app
+        'Accept': 'application/json'
       }
     });
 
@@ -60,7 +63,7 @@ Q5. Write your fifth question here`;
     console.error('[ERROR] Error generating questions:', error);
     res.status(500).json({ 
       error: 'Failed to generate questions',
-      message: 'Please try again. If the problem persists, try a different topic or difficulty level.'
+      message: error.response?.data?.error?.message || 'Please try again. If the problem persists, try a different topic or difficulty level.'
     });
   }
 });
@@ -122,7 +125,10 @@ Answer: ${userAnswer}`;
       }, {
         headers: {
           'Authorization': `Bearer ${process.env.DEEPSEEK_API_KEY}`,
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'HTTP-Referer': 'http://localhost:5000',
+          'X-Title': 'GrowEdge Interview Evaluation',
+          'Accept': 'application/json'
         }
       });
 
